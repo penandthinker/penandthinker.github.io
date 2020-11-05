@@ -1,0 +1,262 @@
+---
+layout: post
+title:  "8pt Grid"
+date:   2020-11-03 09:17:00 -0500
+categories: Assignments
+---
+## **Introduction to the 8pt grid**
+What is pt? pt = point.
+
+Designers design on small artboards despite the devices that the designs will be used for are large. The artboard is rendered at twice as much pixels.
+
+Example:
+<img src="https://miro.medium.com/max/700/1*PhDj1cKrYeiA2EzQnI6yLw.png">
+
+<img src="https://miro.medium.com/max/700/1*YDBj6ON3KAZYfe9mgG-gtg.png">
+<p style="text-align: center;">Image source: <a target=_blank href="https://medium.com/swlh/the-comprehensive-8pt-grid-guide-aa16ff402179">Vitsky at Medium</a></p>
+
+> Designing for the smallest size allows us to scale our assets into the different sizes the different devices require, while maintaining pixel-perfect rendering. And so, 1pt can be translated into 1, 4 or 9 pixels at the @1x, @2x and @3x sizes, respectively.
+
+> So if we have an icon at the size of 16px, when we’ll export that icon at @2x and @3x, the rendered images will be 32px and 48px respectively, and will suit Retina and Super Retina displays.
+
+### **Why 8?**
+8 scales perfectly in all different screen displays including Android's @0.75 and @1.5.
+<img src="https://miro.medium.com/max/700/1*NAMpUPDOUGYGPPMOfENnUw.png">
+<p style="text-align: center;">Image source: <a target=_blank href="https://medium.com/swlh/the-comprehensive-8pt-grid-guide-aa16ff402179">Vitsky at Medium</a></p>
+
+8 is also a good basic unit to work with since the numbers 4 and 8 are easily multiplied and therefore provide flexible and consistent steps between them.
+
+<img src="https://miro.medium.com/max/700/1*leeNQd9tktx79AQ80FGiWQ.png">
+<p style="text-align: center;">Image source: <a target=_blank href="https://medium.com/swlh/the-comprehensive-8pt-grid-guide-aa16ff402179">Vitsky at Medium</a></p>
+
+### **Typography**
+> While font sizes may vary and stray from the 8 multiplication, it’s important the line height will not. The Paragraph font size can be 15 pixels for example, but the line height should be a multiplication of 8, so 24px is an acceptable value.
+
+<img src="https://miro.medium.com/max/700/1*g8eAARxS7wLlP5ChUvxfVw.png">
+<p style="text-align: center;">Image source: <a target=_blank href="https://medium.com/swlh/the-comprehensive-8pt-grid-guide-aa16ff402179">Vitsky at Medium</a></p>
+
+>Tip: Any font you got installed on your machine, will be displayed by entering the font’s name exactly as you would in a CSS document; usually, simply the font’s name.
+
+### **Iconography**
+When designing icons to be using in different sizes, it is recommended to design on a 16x16 pixels grid and on a 20x20 pixels grid. This will cover for any size: 16, 20, 24 (16x1.5), 32, 40, etcetera).
+
+<img src="https://miro.medium.com/max/700/1*8_rNQYCFo7SMB_rS41TdLg.png">
+<p style="text-align: center;">Image source: <a target=_blank href="https://medium.com/swlh/the-comprehensive-8pt-grid-guide-aa16ff402179">Vitsky at Medium</a></p>
+
+### **Layout**
+Bootstrap uses a standard 12 grid. You can modify Bootstrap to your liking. It would be more cost efficient, quicker, and predictable to use.
+
+#### **Horizontal Rhythm**
+>The standard Bootstrap grid is a 12 column layout, with a 15px margin on each side of the column; resulting in a 30px gutter between columns plus 15px to the left and right of the grid. These are the default settings, which I’ll configure to my liking, or ask the developer to configure.
+>
+>The entirety of the grid is called Container. A container can be either fluid or responsive in size. A fluid container will always take the entirety of the width that is available.
+>
+>For each screen range there is a container width that is optimized to that screen range. At first it’s recommended to use the default sizes, however it’s pretty cool to customize when you’re further down the 8pt rabbit hole.
+>
+>When our Bootstrap-based-website is displayed on any device, The browser checks to see home much space is available for display, and sets the layout according to that space. If we have a 414px wide iPhone, we’re in the Extra small category, and out container will take up 100% of the width available. When will switch to a wider device, let’s say a tablet (768px wide), our device category will change to Medium, and the container’s width will be 720px.
+
+When designing for desktop I’d like to have each column be 72px wide, and have a gutter of 24px or 32px. A gutter of 24px will result in 12px on each side of the container, and a gutter of 32px will result in a 16px on each side. I usually opt for the 24px gutter.
+
+*Technically there are 11 gutters plus two halves on each side of the container.
+<img src="https://miro.medium.com/max/700/1*HISgp4UQVcLNdsM5vhOUxg.png">
+<p style="text-align: center;">Image source: <a target=_blank href="https://medium.com/swlh/the-comprehensive-8pt-grid-guide-aa16ff402179">Vitsky at Medium</a></p>
+
+_(12 columns × 72) + (12* gutters × 24) = 1152px_
+
+>Preserving the gutter width is more important than preserving the column width, since the gutters act as the white space between elements — and that is what actually determines the rhythm; while the columns dictate the width of an element.
+>
+>Important: Layout’s width should be based on the content and user needs. If you see it just doesn’t work with the 8pt grid, no worries. We’re designers and we should be flexible when we need to.
+
+#### **Vertical Rhythm**
+>You guessed it, our rows are going to be 8px tall. Some may go even further and have 4px rows — This allows for any line height which is a multiplication of 4, which is great. However, I found out that it takes more energy to maintain than it gives value in the output. So 8px is good enough for me.
+>
+>When designing for mobile (web or apps), vertical rhythm is the name of the game, since there isn’t much horizontal rhythm to work with. So maintaining that vertical rhythm consistent and beautiful is doubly important.
+
+### **Design System**
+This is the [8pt grid Sketch template file][source-6].
+
+<br>
+
+---
+
+<br>
+
+### **What are Design Systems for?**
+>"A design system is a collection of reusable components, guided by clear standards, that can be assembled together to build any number of applications."
+
+— From the Design Systems Handbook, Design Better
+
+#### **Colors**
+The minimum that is required when designing digital products:
+1. **Primary**: Usually the brand color
+2. **Secondary (Optional)**: Should complement the primary and not compete for attention. It's purpose is to signal elements with a secondary importance
+3. **Grays**: Approximately 4-5 shades
+4. **Support**: Success (Green), Warning (Yellow), Error (Red), and Information (Blue)
+
+#### Creating the palette
+To create more shades of any color, use a technique of manipulating Saturation (S) and Brightness (B).
+
+**Darker tones**: Add saturation and reduce blackness
+
+**Lighter tones**: Reduce saturation and add blackness
+
+When creating the Grays palette, it's important to assign a use for each one.
+
+1. **Lightest**: Used to distinct white elements on top of a gray background
+2. **Light**: Should allow dark text over it to be accessibly read
+3. **Base**: Neutral gray
+4. **Dark**: Used to allow white text over to be accessibly read
+5. **Darkest**: Used to signify secondary areas, like sidebars. Should allow white text over to be accessibly read
+
+#### Defining the styles
+Sketch allows us to name our styles and organize them into groups
+
+<img src="https://miro.medium.com/max/700/1*xdfoZ1GBKlx6im4uKh7Cug.gif">
+<p style="text-align: center;">Image source: <a target=_blank href="https://medium.com/swlh/design-system-based-on-the-8pt-grid-2473ca5f0ae1">Vitsky at Medium</a></p>
+
+#### **Typography**
+#### Choose Your Fonts
+Some clients already have fonts that they use. If not, be sure to give it the proper attention it deserves and read some articles on the topic.
+
+#### Modular Scaling
+Modular scaling is basically a method that helps create a consistent typography system fast. It removes the guesswork from choosing the next font size and line height.
+
+**1-2 Font Families**: Use 2 font families at the most, one for headings and another for body and small text. There's rarely a need for a 3rd font family.
+
+**2-3 Font Weights**: It's easy to lose track with robust font families like Helvetica or Inter. Having more than 3 font weights are too much for anyone to discern meaning from.
+
+**4-12 Typographic Styles**: Digital products tend to need less styles, usually 2-3 headings, body (2-3 weights), and a caption style, while blogs and robust websites tend to need several more headings and smaller font styles.
+
+**3 Font Colors**: Prepare your typographic system beforehand for any oaccassion and create styles for Dark, Grayk, and Light at least.
+
+#### Define Text Styles
+Sketch allows us to define text styles in an oraganized fashion, which helps us in turn to create a clear and concise typographic inventory.
+
+`{Style name} / {Alignment} / {Color}`
+
+<img src="https://miro.medium.com/max/700/1*nqihZ3KftdLc5P7Ux6IJeA.gif">
+<p style="text-align: center;">Image source: <a target=_blank href="https://medium.com/swlh/design-system-based-on-the-8pt-grid-2473ca5f0ae1">Vitsky at Medium</a></p>
+
+#### **Iconography**
+Exporting a 16×16 pixels icon for iOS will result in perfectly rendered icons in 16, 32 and 48 pixels.
+
+#### **Shadows**
+Shadows are used to signify elevation - how much an element is off surface.
+
+**Use one light source**: Imagine there is a single light source illuminating your interface, casting shadows from a single angle, resulting in one x value for all of your shadows horizontal position.
+
+**More than one shadow**: Multiple shadow styles can result in a more realistic and unique shadow.
+
+**You can apply shadows to groups**: Avoid shadows overlaying one another, and apply you shadow to the group, instead of layers within. However, you can’t apply more than one shadow to a group.
+
+#### **Border Radius**
+If you need to include a border radius in your design, you can alternate between different radii for different elements (usually no more than 3 border radii settings).
+
+1. 2px border radius for UI componenets such as checkboxes, tags and the like
+2. 4px border radius for buttons na dht like
+3. 8px border radius for cards, modals and the like
+
+#### **Components**
+Components are all the reusable items you have lying around: buttons, inputs, labels, cards, video players and so forth.
+
+#### Modular Building Blocks
+The most efficient method out there for organizing your DS is the Atomic Design method. The method was introduced to us all by Brad Frost. All of our components are organized to one of the following: Atoms, Molecules, Organisms, Templates and Pages.
+
+<img src="https://miro.medium.com/max/700/1*t5O3Ke6Gthr3veOsGQl86w.png">
+<p style="text-align: center;">Image source: <a target=_blank href="https://medium.com/swlh/design-system-based-on-the-8pt-grid-2473ca5f0ae1">Vitsky at Medium</a></p>
+
+#### **Grid & Layout**
+#### The Box Model
+The box model is a box that envelopes every element on the screen — everything essentially lives in a rectangle. The box model consists of: margins, borders, padding, and the content itself.
+
+Increasing the padding will increase the box size, while increasing margins will increase the space around the box, pushing other elements away (element — any entity in the webpage, in this case the text ‘Box’).
+
+Notice that padding and margins don’t have to be the same for all sides; in fact, they can be different for each side. Also, the box’s height is affected by the element’s line height, while it’s width is affected by the font size.
+
+This distinction is crucial for us designers to understand. An element’s size and position, it’s presence in the layout, is determined by several factors:
+
+**Margins**: the space an element keeps away from other elements.
+**Padding**: the space an element clears around the content.
+**Content**: the content inside the box
+
+Frustratingly enough, there are two very confusing modes for rendering elements on the screen concerning the box model:
+
+`/* The default and confusing settings */`
+
+`.red-box {`
+
+`width: 200px;`
+
+`height: 200px;`
+
+`padding: 40px;`
+
+`border: solid red 2px;`
+
+`/*default box sizing (bad for designers)*/`
+
+`box-sizing: content-box;`
+
+`}`
+
+
+`/* The easy to understand settings */`
+`.blue-box {`
+
+`width: 200px;`
+
+`height: 200px;`
+
+`padding: 40px;`
+
+`border: solid blue 2px;`
+
+`/*the box sizing (making sense for designers)*/`
+
+`box-sizing: border-box;`
+
+`}`
+
+The two methods differ in calculating the elements size; the first method (default), takes the assigned height and width (200px), and adds on top of that padding (40px x 4 sides), and border (2px x 4 sides), resulting in a 288 x 288px box. Any change to padding and border width will alter the box’s final size.
+
+The second mode includes padding and border in the final assigned size, resulting in a 200 x 200px box no matter what the padding and border values are— much neater and easier to understand.
+
+<img src="https://miro.medium.com/max/700/1*SUerwUfFdnKYyaO_vpz9yQ.gif">
+<p style="text-align: center;">Image source: <a target=_blank href="https://medium.com/swlh/design-system-based-on-the-8pt-grid-2473ca5f0ae1">Vitsky at Medium</a></p>
+> A simple property, makes calculating the element’s size much easier for everyone. The red box has the default settings at first, resulting in an unexpected box size. It’s box sizing property is then assigned the border-box value, resulting in a neat 200*200px size box.
+
+#### Spacing
+When deciding on the position of an element, we’re essentially deciding upon its’ spacing from another element. Repeat this decision hundreds of times without a system, and you have about a hundred different spacing definitions.
+
+#### Horizontal Layout
+Each product or website require a certain grid, simply use the 8pt unit in a way that makes sense.
+
+<br>
+
+---
+
+<br>
+
+Resources:
+
+[Vitsky's 8pt Grid Guide][source-1]
+
+[Apple's image size and resolution guidelines][source-2]
+
+[Google's layout guide][source-3]
+
+[Grid Lover][source-4]
+
+[Customizing bootstrap][source-5]
+
+[Brad Frost's Atomic Design][source-7]
+
+[source-1]: https://medium.com/swlh/the-comprehensive-8pt-grid-guide-aa16ff402179
+[source-2]: https://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/image-size-and-resolution/
+[source-3]: https://material.io/design/layout/understanding-layout.html#
+[source-4]: http://gridlover.net/
+[source-5]: https://uxplanet.org/how-to-customize-bootstrap-b8078a011203
+[source-6]: https://drive.google.com/file/d/132Ozzay01kvfoXJTONCDd4ZdH7htOVxg/view?usp=sharing
+[source-7]: https://bradfrost.com/blog/post/atomic-web-design/
+
+[image-source-1]: https://medium.com/swlh/the-comprehensive-8pt-grid-guide-aa16ff402179
