@@ -181,41 +181,33 @@ This distinction is crucial for us designers to understand. An element’s size 
 
 Frustratingly enough, there are two very confusing modes for rendering elements on the screen concerning the box model:
 
-`/* The default and confusing settings */`
+```CSS
+/* The default and confusing settings */
 
-`.red-box {`
+.red-box {
+  width: 200px;
+  height: 200px;
+  padding: 40px;
+  border: solid red 2px;
 
-`width: 200px;`
-
-`height: 200px;`
-
-`padding: 40px;`
-
-`border: solid red 2px;`
-
-`/*default box sizing (bad for designers)*/`
-
-`box-sizing: content-box;`
-
-`}`
+  /*default box sizing (bad for designers)*/
+  box-sizing: content-box;
+}
 
 
-`/* The easy to understand settings */`
-`.blue-box {`
+/* The easy to understand settings */
 
-`width: 200px;`
+.blue-box {
+  width: 200px;
+  height: 200px;
+  padding: 40px;
+  border: solid blue 2px;
 
-`height: 200px;`
+  /*the box sizing (making sense for designers)*/
+  box-sizing: border-box;
+}
+```
 
-`padding: 40px;`
-
-`border: solid blue 2px;`
-
-`/*the box sizing (making sense for designers)*/`
-
-`box-sizing: border-box;`
-
-`}`
 
 The two methods differ in calculating the elements size; the first method (default), takes the assigned height and width (200px), and adds on top of that padding (40px x 4 sides), and border (2px x 4 sides), resulting in a 288 x 288px box. Any change to padding and border width will alter the box’s final size.
 
