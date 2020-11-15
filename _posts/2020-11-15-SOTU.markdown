@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "State of the Union"
+date:   2020-11-15 08:50:00 -0500
+categories: Assignments
+---
+
+### Where you're at now
+
+  Right now, I feel like I am getting a better understanding the technical aspect of design. Working in a terminal and learning how to use different programs to create what I want to see visually and having to make sure I've set up my work space to send the updates correctly is a lot different from what I am used to doing (ex: code something in the backend and hitting preview to see changes versus pushing updates).
+
+### What you're looking forward to
+
+  As I am doing research for the design of the doggy daycare website, I'm finding that I actually enjoy learning more about the human experience with design. In fact, prior to doing the research, I had thought that I wanted to do more desktop website designs, but I think as I am continuing to look at other people's work and how they came to creating their site, I am interested in pursuing mobile-related design work whether that is creating a website or an application.
+
+### Goals
+    
+1. Being able to format my lines of code properly
+2. Understanding terminology (this will just require me memorizing terms)
+3. Getting more acquainted with Figma (may consider purchasing a Sketch license for the MBP in the future)
+4.  Understanding GitHub and branching
+
+### Hopes
+
+One of my hopes is that even if I don't necessarily understand everything by the end of the apprenticeship, that I know enough to be able to continue learning more of what it is that I truly want to do on my own.
+
+### Fears
+
+1. Accidentally breaking something beyond repair in the terminal
+2. Feeling like I am dependent on a crutch like constantly web searching for my answers rather than knowing what to do in most cases
